@@ -1,0 +1,38 @@
+//app.js
+//1:加载模块 express
+const express = require("express");
+const session=require("express-session");
+const imagelist=require("./router/imagelist");
+const newslist=require("./router/newslist");
+const bodyParser=require("body-parser");
+const shoplist=require("./router/shoplist");
+const cartlist=require("./router/cartlist");
+const users = require("./router/users");
+const searchlist = require("./router/searchlist");
+//加载处理跨域的模块
+
+//2:创建express
+var app = express();
+app.use(bodyParser.urlencoded({extended:false}))
+const cors=require("cors");
+app.use(cors({
+  origin:['http://localhost:5050','http://applephone.applinzi.com','http://localhost:8080'],
+  credentials:true
+}))
+//3:绑定监听端口 3000
+app.listen(5050);
+//4:指定静态目录 public
+//__dirname 当前程序所有目录完整路径
+//console.log(__dirname)
+app.use(session({
+  secret:'随机字符串',
+  resave:false,
+  saveUninitialized:true
+}))
+app.use(express.static(__dirname+"/static"));
+app.use("/imagelist",imagelist);
+app.use("/newslist",newslist);
+app.use("/shoplist",shoplist);
+app.use("/cartlist",cartlist);
+app.use("/users",users);
+app.use("/searchlist",searchlist);

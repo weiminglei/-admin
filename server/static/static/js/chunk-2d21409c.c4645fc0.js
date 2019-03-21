@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d21409c"],{aedf:function(n,e,t){"use strict";t.r(e);var u=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v("\n  我是 客户资源管理\n")])},c=[],i=t("2877"),l={},o=Object(i["a"])(l,u,c,!1,null,null,null);o.options.__file="index.vue";e["default"]=o.exports}}]);

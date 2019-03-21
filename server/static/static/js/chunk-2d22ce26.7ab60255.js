@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d22ce26"],{f4ac:function(n,e,o){"use strict";o.r(e);var t=function(){var n=this,e=n.$createElement,o=n._self._c||e;return o("div",[n._v("\n  我是operation operation\n")])},i=[],a=o("2877"),c={},r=Object(a["a"])(c,t,i,!1,null,null,null);r.options.__file="operation.vue";e["default"]=r.exports}}]);

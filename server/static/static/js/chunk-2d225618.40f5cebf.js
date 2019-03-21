@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d225618"],{e3c7:function(n,e,t){"use strict";t.r(e);var i=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v("\n  我是mobile Function\n")])},o=[],u=t("2877"),c={},l=Object(u["a"])(c,i,o,!1,null,null,null);l.options.__file="mobileFunctions.vue";e["default"]=l.exports}}]);
